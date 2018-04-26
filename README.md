@@ -1,4 +1,4 @@
-# AgroXchange API
+# AgroXchange Server
 
 ### Admin routes
 
@@ -31,3 +31,10 @@
 |/orders/:id/users   | GET       | all orders by user |
 
 _* If the logged in user is the same as the user you're getting it also gets the orders for that user_
+
+## Running
+
+* You need a working Postgres database that is preferrably empty (drop all the tables) and running 
+* Install the dependencies using `yarn install`
+* Compile the app (Typescript > Javascript) using `yarn compile` (during development you can use `yarn watch`)
+* `yarn start`
